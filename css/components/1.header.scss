@@ -1,0 +1,251 @@
+@import "../partials/variables";
+
+.menu-icon {
+	z-index: 9998;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 40px;
+	height: 38px;
+	padding: 4px 8px;
+	background: $black;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.menu-icon.active {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.menu-icon.active span {
+	position: absolute;
+	width: calc(100% - 16px);
+	top: calc(50% - 8px);
+}
+.menu-icon.active span:nth-child(1) {
+	transform: rotate(45deg);
+}
+.menu-icon.active span:nth-child(2) {
+	display: none;
+}
+.menu-icon.active span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+
+.menu-icon span {
+	width: 100%;
+	height: 3px;
+	display: block;
+	background: $white;
+	margin: 5px 0;
+	transition: .5s;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 70%;
+	height: 100vh;
+	background: $black;
+	transition: .5s;
+	padding: 2em 1em 1em 1em;
+	text-align: center;
+	box-sizing: border-box;
+	z-index: 9997;
+}
+.sidebar.active {
+	left: 30%;
+}
+
+.sidebar__img {
+	width: 70%;
+	height: auto;
+}
+.sidebar__img:hover {
+	opacity: 0.8;
+}
+.language-icon {
+	padding-top: 10px;
+	width: 18%;
+}
+.language-icon:hover {
+	transform: scaleY(1.1);
+}
+.sidebar__menu {
+	margin: 0;
+	padding: 0.5em 0;
+}
+.sidebar__menu li {
+	list-style-type: none;
+	font-family: sans-serif;
+}
+.sidebar__menu li a {
+	display: block;
+	padding: 10px 0;
+	text-transform: uppercase;
+	color: $white;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+.sidebar__menu li a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.highlight {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* =============  Dropdown Menu ================= */
+.dropdown-btn {
+	width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: $white;
+    padding: 10px 0;
+}
+.dropdown-btn:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.dropdown-btn a {
+	text-decoration: none;
+	color: $white;
+	text-transform: uppercase;
+	font-family: Simpel-medium;
+    font-size: 0.8em;
+}
+.fa-caret-down {
+	font-size: 24px;
+	margin-top: 0;
+}
+.dropdown {
+	display: none;
+	color: $white;
+	padding: 0;
+	transition: height 1s linear;
+}
+.visible {
+    color: white;
+    }
+.dropdown li a {
+ 	font-size: 0.6em;
+ 	padding: 6px 0;
+ }
+ .dropdown li a:hover {
+	background-color: rgba(255, 255, 255, 0.1);	
+	}
+
+
+/* =============  Social Media ================= */
+
+.sidebar__socialmedia {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+}
+.socialmedia__li {
+	list-style: none;
+}
+.socialmedia__a {
+	display: flex;
+	justify-content: center;
+	padding: 0 5%;
+}
+.socialmedia__a img {
+	transition: .5s;
+	width: 60%;
+	padding: 10px 0;
+}
+.socialmedia__a img:hover {
+	opacity: .5;
+}
+
+@media only screen and (orientation: landscape) {
+
+	.sidebar.active {
+    left: 60%;
+    padding: 5px 5px;
+	}
+	.sidebar {
+		width: 40%;
+	}
+	.sidebar__img {
+    width: 40%;
+	}
+	.sidebar__menu {
+    padding: 0;
+	}
+	.sidebar__menu li a {
+    font-size: 0.7em;
+    padding: 5px 0;
+	}
+	.dropdown-btn {
+		padding: 5px 0;
+	}
+	.dropdown-btn a {
+	font-size: 0.7em;
+	padding: 0 0;
+	}
+	.dropdown li a {
+		font-size: 0.5em;
+	}
+	.sidebar__socialmedia {
+	padding: 10px 20px;
+	}
+
+	.socialmedia__a {
+	display: flex;
+	justify-content: center;
+	}
+	.socialmedia__a img {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (min-height: 580px) {
+	.sidebar {
+		width: 40%;
+	}
+	.sidebar.active {
+		left: 60%;
+	}
+	.sidebar__img {
+		width: 50%;
+		margin: 3% 0;
+	}
+	.sidebar__menu li a {
+    	font-size: 1em;
+    	padding: 10px 0;
+	}
+	.dropdown-btn a {
+		font-size: 1em;
+		padding: 10px 0;
+	}
+	.dropdown li a {
+		font-size: 0.7em;
+	}
+	.sidebar__socialmedia {
+	padding: 25px 20px;
+	}
+	.socialmedia__a img {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 560px) {
+.language-icon {
+width: 12%;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+	.sidebar {
+		width: 30%;
+	}
+	.sidebar.active {
+		left: 70%;
+	}
+	.sidebar__img {
+		width: 50%;
+	}
+}

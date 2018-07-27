@@ -1,0 +1,35 @@
+/* colors */
+/* Fonts */
+/* BUTTON STYLE PACKAGE */
+/* END OF BUTTON STYLE PACKAGE */
+/* Responsive Circle */
+.responsive-circle3 {
+  align-self: flex-start;
+  font-size: 80px;
+  width: 30%;
+  padding: 0 35%; }
+
+.responsive-circle3:not(:hover) {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.responsive-circle3::after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 100%;
+  width: 100%; }
+
+.bgimg3:after {
+  background-image: url(../img/krieder.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/* End of Responsive Circle */
+
+/*# sourceMappingURL=13.krieder.css.map */

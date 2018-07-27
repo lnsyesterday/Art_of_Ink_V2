@@ -1,0 +1,18 @@
+@import "../partials/mixins";
+/* Responsive Circle */
+		.responsive-circle2 {
+    		align-self: flex-start;
+    		font-size: 80px;
+    		width: 30%;
+    		padding: 0 35%;
+		}
+		.responsive-circle2:not(:hover) {
+    		@include grayscale;
+		}
+		.responsive-circle2::after {
+			@include responsiveCircleAfter;
+					}
+		.bgimg2:after {
+			@include backgroundIMG(url(../img/sbrandt.jpg), 100%, center);
+		}
+/* End of Responsive Circle */

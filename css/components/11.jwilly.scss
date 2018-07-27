@@ -1,0 +1,90 @@
+@import "../partials/variables";
+@import "../partials/normalize";
+@import "../partials/nesting";
+@import "../partials/mixins";
+
+.profile {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.profile h1 {
+	width: 100%;
+	margin: 1em auto 1em auto;
+	color: $white;
+}
+.profile p {
+	margin: 1em 0;
+	text-align: left;
+	font-size: 1.5em;
+	color: $darkgrey;
+}
+.profile p:last-child {
+	padding-bottom: 30px;
+}
+.profile--headline {
+	display: none;
+}
+.profile--headline h2 {
+	padding: 0 25px;
+	font-family: 'Indie Flower', cursive;
+	font-size: 3em;
+}
+.profile--headline p {
+	color: $white;
+	text-align: right;
+	margin: 0;
+	padding: 0 25px;
+}
+.white-bar {
+	grid-row-start: 2;
+	grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: white;
+}
+.white-bar h2 {
+	margin: 25px auto;
+	font-size: 2em;
+}
+
+
+
+@media screen and (min-width: 480px) {
+.circle-container {
+			width: 70%;
+}
+} 
+
+@media screen and (min-width: 600px) {
+.circle-container {
+			width: 50%;
+}
+.profile--headline {
+	width: 50%;
+}
+} 
+
+@media screen and (min-width: 768px) {
+.circle-container {
+	width: 40%;
+}
+.profile {
+	justify-content: flex-start;
+}
+.profile--headline {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+}
+
+@media screen and (min-width: 1024px) {
+	.circle-container {
+			width: 30%;
+}
+.profile--headline {
+	width: 70%;
+	}
+}

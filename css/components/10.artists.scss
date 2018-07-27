@@ -1,0 +1,158 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
+.main--artists {
+	@include grid(2.5% 95% 2.5%);
+	background-color: $white;
+}
+/* For the artists.php */
+.article--artists-group {;
+	grid-area: 2/2;
+	background-color: $white;
+}
+.article--artists-header {
+	background-color: $black;
+	grid-column: 1/4;
+	grid-row: 1/2;
+}
+.article--artists-header h1 {
+	margin: 1.2em 0.3em;
+	color: $white;
+}
+/* For the individual profiles */
+.article--artists {
+	grid-area: 1/2;
+	background-color: $black;
+}
+
+.article--artists h1 {
+	color: $black;
+	text-align: center;
+	margin-top: 25%;
+}
+.article--artists h2 {
+	color: $white;
+} 
+
+/* Responsive Circle */
+		.circle-container {
+			width: 80%;
+    		height: auto;
+    		position: relative;
+    		overflow: hidden;
+    		border-radius: 50%;
+		}
+		.circle-container:hover {
+    		overflow: hidden;
+		}
+		
+		.responsive-circle {
+    		width: 100%;
+    		height: 100%;
+    		border-radius: 50%;
+    		display: block;
+			position: relative;
+    		overflow: hidden;
+		}
+		.responsive-circle:not(:hover) .circle-cover {
+    		@include grayscale;
+		}
+		.circle-cover {
+			position: absolute;
+    		top: 90%;
+    		left: -90%;
+    		height: 150%;
+    		width: 150%;
+    		border-radius: 140px 140px 0 0;
+    		-moz-border-radius: 140px 140px 0 0;
+    		-webkit-border-radius: 140px 140px 0 0;
+    		background: rgba(0, 0, 0, 0.5);
+    		transform: rotate(-135deg);
+    		transition: all .4s ease-in-out;
+		}
+
+	   .circle-container:hover .circle-cover {
+            top: 25%;
+            left: -77%;
+        }
+	   .instagram-icon {
+	        position: absolute;
+            display: block;
+            bottom: 0;
+            left: -16%;
+            transform: translate(-50%, 0);
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            transition: all .4s ease-in-out;
+	    }
+
+	   .circle-container:hover .instagram-icon {
+            bottom: 25%;
+            left: 40%;
+            cursor: pointer;
+        }
+		
+/* End of Responsive Circle */
+
+
+.sidebarleft {
+	grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 2;
+	background-color: $black;
+	height: auto;
+}
+.sidebarright {
+	grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 1;
+    grid-column-end: 3;
+	background-color: $black;
+	height: auto;
+}
+.instabox {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	position: relative;
+	grid-row-start: 3;
+}
+
+@media screen and (min-width: 480px) {
+.main--artists {
+@include grid(5% 90% 5%);
+}
+.article--artists h1 {
+margin-top: 20%;
+}
+}
+@media screen and (min-width: 568px) {
+
+.artists__ul li p {
+	width: calc(70% - 30px);
+	margin: 15px 15px;
+}
+}
+@media screen and (min-width: 768px) {
+.main--artists {
+@include grid(10% 80% 10%);
+}
+.article--artists h1 {
+margin-top: 15%;
+}
+}
+@media screen and (min-width: 1024px) {
+.main--artists {
+@include grid(20% 60% 20%);
+}
+.article--artists h1 {
+margin-top: 10%;
+}
+
+}
+@media screen and (min-width: 1324px) {
+.article--artists h1 {
+margin-top: 5%;
+}
+}

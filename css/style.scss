@@ -1,0 +1,111 @@
+/* ======== Partials ======= */
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/nesting";
+@import "partials/mixins";
+
+/* ======= Style Components ======= */
+@import "components/1.header";
+@import "components/2.mainpage";
+@import "components/3.footer";
+@import "components/4.about";
+@import "components/10.artists";
+@import "components/11.jwilly";
+@import "components/12.sbrandt";
+@import "components/13.krieder";
+@import "components/instagram";
+
+/* ======= Fonts ======= */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+html, body {
+  height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+  	flex-direction: column;
+  	overflow-x: hidden;
+  	flex: 1 0 auto;
+}
+
+.videoMargin {
+	margin-top: 100vh;
+}
+
+.d-none {
+	display: none;
+}
+
+.loader {
+	width: 100vw;
+	height: 100vh;
+	background: $white;
+	z-index: 9999;
+}
+
+.loader img {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parallax {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 40vh;
+}
+
+.white {
+	background: $white;
+	color: $black;
+}
+
+.black {
+	background: $black;
+	color: $white;
+}
+
+@font-face {
+    font-family: Simpel-Medium;
+    src: url(../fonts/Simpel-Medium.otf);
+}
+
+@font-face {
+    font-family: Stingray;
+    src: url(../fonts/Stingray.otf);
+}
+
+p, li, a, h1, h2, h3, h4, h5, h6, small, address, table {
+	font-family: $mainFont;
+	margin: 0;
+	text-align: center;
+}
+
+h1 {
+	padding: 2.5% 0;
+	font-size: 2.5em;
+}
+h2 {
+	font-size: 2em;
+}
+
+button, address, input, optgroup, select, textarea, a, li, p {
+	font-size: 20px;
+	font-weight: 100;
+}
+
+.clearfix {
+	clear: both;
+}
+@media only screen and (orientation: portrait) {
+.videoMargin {
+  margin-top: 0;
+  }
+  
+}
