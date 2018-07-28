@@ -1,5 +1,7 @@
 <?php $pageTitle = "Art of Ink";
 $menuTab = "Home";
+$languageBarEn = "index.php";
+$languageBarDk = "index_dk.php";
 ?>
 <?php require "includes/head.php" ?>
 <?php require "includes/loader.php" ?>

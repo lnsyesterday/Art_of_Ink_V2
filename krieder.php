@@ -1,4 +1,7 @@
-<?php $pageTitle = "Kamilla Rieder"; ?>
+<?php $pageTitle = "Kamilla Rieder"; 
+$languageBarEn = "krieder.php";
+$languageBarDk = "krieder_dk.php";
+?>
 
 <?php require "includes/head.php" ?>
 

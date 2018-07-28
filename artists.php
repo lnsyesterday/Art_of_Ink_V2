@@ -1,4 +1,7 @@
-<?php $pageTitle = "Artists"; ?>
+<?php $pageTitle = "Artists"; 
+$languageBarEn = "artists.php";
+$languageBarDk = "artists_dk.php";
+?>
 
 <?php require "includes/head.php" ?>
 

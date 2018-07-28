@@ -1,4 +1,7 @@
-<?php $pageTitle = "Artists"; ?>
+<?php $pageTitle = "Artists"; 
+$languageBarEn = "artists.php";
+$languageBarDk = "artists_dk.php";
+?>
 
 <?php require "includes/head.php" ?>
 
@@ -15,7 +18,7 @@
 							<h2>Jonas Willy Brund-Andersen</h2>
 							<div class="responsive-circle1 bgimg1"></div>
 							<div class="list-wrapper">
-							<p>Jonas startede in karriere tilbage i 2009, da HP tog ham ind som læring i sit studio i Odense.</p>
+							<p>Jonas startede sin karriere tilbage i 2009, da HP tog ham ind som læring i sit studio i Odense.</p>
 							<a href="jwilly_dk.php"><button><span>Se min profil</span></button></a>
 							</div>
 						</li>

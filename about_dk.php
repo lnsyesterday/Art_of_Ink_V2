@@ -1,4 +1,7 @@
-<?php $pageTitle = "About"; ?>
+<?php $pageTitle = "About"; 
+$languageBarEn = "about.php";
+$languageBarDk = "about_dk.php";
+?>
 <?php require "includes/head.php" ?>
 <?php require "includes/loader.php" ?>
 

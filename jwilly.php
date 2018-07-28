@@ -1,4 +1,7 @@
-<?php $pageTitle = "Jonas Willy"; ?>
+<?php $pageTitle = "Jonas Willy"; 
+$languageBarEn = "jwilly.php";
+$languageBarDk = "jwilly_dk.php";
+?>
 
 <?php require "includes/head.php" ?>
 

@@ -1,4 +1,7 @@
-<?php $pageTitle = "Jonas Willy"; ?>
+<?php $pageTitle = "Jonas Willy"; 
+$languageBarEn = "jwilly.php";
+$languageBarDk = "jwilly_dk.php";
+?>
 
 <?php require "includes/head.php" ?>
 
@@ -6,7 +9,7 @@
 
 <div id="wrapper" class="wrapper d-none">
 
-<?php include "includes/header.php" ?>
+<?php include "includes/header_dk.php" ?>
 
 	<main class="main--artists" id="artists">
 		
@@ -54,5 +57,5 @@
 			</article>
 	</main>
 
-<?php include "includes/footer.php" ?>
+<?php include "includes/footer_dk.php" ?>
 

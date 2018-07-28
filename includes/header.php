@@ -10,8 +10,8 @@
 			<a href="index.php"><img class="sidebar__img" src="img/logo.png" alt="logo"></a>
 
 			<div class="language-bar">
-          		<a href="index.php" hreflang="en"><img class="language-icon" src="img/english-flag-icon.ico" alt="english-flag-icon"></a>
-          		<a href="index_dk.php" hreflang="da"><img class="language-icon" src="img/danish-flag-icon.ico" alt="danish-flag-icon"></a>
+          		<a href="<?php echo $languageBarEn; ?>" hreflang="en"><img class="language-icon" src="img/english-flag-icon.ico" alt="english-flag-icon"></a>
+          		<a href="<?php echo $languageBarDk; ?>" hreflang="da"><img class="language-icon" src="img/danish-flag-icon.ico" alt="danish-flag-icon"></a>
     		</div>
 
 			<ul class="sidebar__menu">
