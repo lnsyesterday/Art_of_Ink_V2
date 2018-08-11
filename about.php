@@ -28,19 +28,19 @@ $languageBarDk = "about_dk.php";
 
 	<section>
 		
-		<h2 class="about__us">Our pioneer</h2>
+		<!--<h2 class="about__us">Our pioneer</h2>
 		
 		<div class="about__us-paragraph">
 			<p>HP is the man behind the success. He started his career as an apprentice for Micheal Guldman, and has since then had his own shops in both Kolding and Odense.</p>
-		</div>
-		<div class="about__us-img">
+		</div>-->
+		<!--<div class="about__us-img">
 			<img class="hp"  src="img/hp-desktop.jpg" alt="HP">
 			<img class="hp-2" src="img/hp.jpg" alt="HP">
-		</div>
+		</div>-->
 		
-		<div class="about__us-paragraph">
+		<!--<div class="about__us-paragraph">
 			<p>HP has tattooed for about 20 years, and has taught several talented artists during this period. HP is skillful in all styles, but has always had a certain eye for oriental art. He loves freehand work, and will gladly create big japanese pieces this way.</p>
-		</div>
+		</div>-->
 		
 	</section>
 <?php include "includes/footer.php" ?>

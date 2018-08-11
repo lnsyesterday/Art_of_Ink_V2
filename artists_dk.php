@@ -11,9 +11,19 @@ $languageBarDk = "artists_dk.php";
 
 		<?php include "includes/header_dk.php" ?>
 			<main class="main--artists" id="artists">
-				<article class="article--artists-group">
+				<div class="article--artists-header">
 					<h1>Mød vores kunstnere</h1>
+				</div>
+				<article class="article--artists-group">	
 					<ul class="artists__ul">
+						<li>
+							<h2>HP</h2>
+							<div class="responsive-circle0 bgimg0"></div>
+							<div class="list-wrapper">
+							<p>HP er manden bag succesen. Han startede sin karriere som elev hos Michael Guldman og har sidenhen haft egne butikker i både Kolding og Odense.</p>
+							<a href="hp.php"><button><span>Se min profil</span></button></a>
+							</div>
+						</li>
 						<li>
 							<h2>Jonas Willy Brund-Andersen</h2>
 							<div class="responsive-circle1 bgimg1"></div>

@@ -16,11 +16,24 @@
 		
 		h2 {
 			width: 100%;
-			font-size: 1em;
+			font-size: 1.5em;
 			margin: 1em auto;
 			text-align: left;
 		}
 		/* Responsive Circle */
+		.responsive-circle0 {
+    		font-size: 80px;
+    		width: 280px;
+		}
+		.responsive-circle0:not(:hover) {
+    		@include grayscale;
+		}
+		.responsive-circle0::after {
+			@include responsiveCircleAfter;
+					}
+		.bgimg0:after {
+			@include backgroundIMG(url(../img/hp-portrait.jpg), 100%, center);
+		}
 		.responsive-circle1 {
     		font-size: 80px;
     		width: 280px;
@@ -124,6 +137,10 @@
 .artists__ul li div button {
 	@include buttonStyle;
 }
+.artists__ul li .responsive-circle0 {
+	width: 60%;
+	align-self: flex-start;
+}
 .artists__ul li .responsive-circle1 {
 	width: 60%;
 	align-self: flex-start;
@@ -142,7 +159,9 @@
 flex-direction: row;
 
 }
-
+.artists__ul li .responsive-circle0 {
+width: 50%;
+}
 .artists__ul li .responsive-circle1 {
 width: 50%;
 }

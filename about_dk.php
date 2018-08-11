@@ -27,7 +27,7 @@ $languageBarDk = "about_dk.php";
 	<div class="parallax diplomas"></div>
 
 	<section>
-		<h2 class="about__us">Vores pioner</h2>
+		<!--<h2 class="about__us">Vores pioner</h2>
 		
 		<div class="about__us-paragraph">		
 			<p>HP er manden bag succesen. Han startede sin karriere som elev hos Michael Guldman og har sidenhen haft egne butikker i både Kolding og Odense.</p>
@@ -38,7 +38,7 @@ $languageBarDk = "about_dk.php";
 		</div>
 		<div class="about__us-paragraph">	
 			<p>Han har efterhånden tatoveret i godt 20 år og har oplært adskillige talentfulde elever i tidens løb. Han har både oplært Jonas og Simon, som i dag også er medejere i Århus-shoppen. Hp mestrer alle stilarter, men har dog altid haft sans for det orientalske. Han elsker frihåndsarbejde og udformer gerne et helt japansk design direkte på kroppen. HP er ene-ejer af Odense-shoppen og medejer af Århus-shoppen.</p>
-		</div>
+		</div>-->
 	</section>
 <?php include "includes/footer_dk.php" ?>
 <script src="js/counter_dk.js"></script>

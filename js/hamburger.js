@@ -10,7 +10,7 @@ toggleBtn.addEventListener('click', function() {
 
 /* ------------------- Dropdown menu -------------- */
 
-var dropdown = document.getElementsByClassName("dropdown-btn");
+var dropdown = document.getElementsByClassName("dropdown-li");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {

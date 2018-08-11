@@ -17,8 +17,9 @@
 			<ul class="sidebar__menu">
 				<li><a href="index.php">Home</a></li>
 				<li><a href="about.php">About</a></li>
-				<button class="dropdown-btn"><a href="artists.php">Artists</a><br><i class="fas fa-caret-down"></i></button>
+				<li class="dropdown-li"><a href="artists.php">Artists</a><img src="img/double-arrow.png" class="down-arrow"></li>
 					<ul class="dropdown">
+						<li><a href="hp.php">HP</a></li>
 						<li><a href="jwilly.php">Jonas</a></li>
 						<li><a href="sbrandt.php">Simon</a></li>
 						<li><a href="krieder.php">Kamilla</a></li>

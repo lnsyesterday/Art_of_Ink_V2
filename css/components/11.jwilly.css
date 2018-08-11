@@ -321,9 +321,30 @@ template {
     /* End of Responsive Circle */ }
     .artists__ul li h2 {
       width: 100%;
-      font-size: 1em;
+      font-size: 1.5em;
       margin: 1em auto;
       text-align: left; }
+    .artists__ul li .responsive-circle0 {
+      font-size: 80px;
+      width: 280px; }
+    .artists__ul li .responsive-circle0:not(:hover) {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%); }
+    .artists__ul li .responsive-circle0::after {
+      border-radius: 50%;
+      content: "";
+      display: block;
+      height: 0;
+      padding-bottom: 100%;
+      width: 100%; }
+    .artists__ul li .bgimg0:after {
+      background-image: url(../img/hp-portrait.jpg);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat; }
     .artists__ul li .responsive-circle1 {
       font-size: 80px;
       width: 280px; }
@@ -484,6 +505,10 @@ template {
     overflow: hidden;
     cursor: pointer; }
 
+  .artists__ul li .responsive-circle0 {
+    width: 60%;
+    align-self: flex-start; }
+
   .artists__ul li .responsive-circle1 {
     width: 60%;
     align-self: flex-start; }
@@ -498,6 +523,9 @@ template {
 @media screen and (min-width: 768px) {
   .artists__ul li {
     flex-direction: row; }
+
+  .artists__ul li .responsive-circle0 {
+    width: 50%; }
 
   .artists__ul li .responsive-circle1 {
     width: 50%; }

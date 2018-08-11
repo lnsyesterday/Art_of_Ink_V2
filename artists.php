@@ -13,9 +13,17 @@ $languageBarDk = "artists_dk.php";
 			<main class="main--artists" id="artists">
 			<div class="article--artists-header">
 						<h1>Meet Our Artists</h1>
-					</div>
+			</div>
 			<article class="article--artists-group">	
 					<ul class="artists__ul">
+						<li>
+							<h2>HP</h2>
+							<div class="responsive-circle0 bgimg0"></div>
+							<div class="list-wrapper">
+							<p>HP is the man behind the success. He started his career as an apprentice for Micheal Guldman, and has since then had his own shops in both Kolding and Odense.</p>
+							<a href="hp.php"><button><span>See my profile</span></button></a>
+							</div>
+						</li>
 						<li>
 							<h2>Jonas Willy Brund-Andersen</h2>
 							<div class="responsive-circle1 bgimg1"></div>

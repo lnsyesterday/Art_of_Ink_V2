@@ -17,8 +17,9 @@
 			<ul class="sidebar__menu">
 				<li><a href="index_dk.php">Hjem</a></li>
 				<li><a href="about_dk.php">Om os</a></li>
-				<button class="dropdown-btn"><a href="artists_dk.php">Kunstnere</a><br><i class="fas fa-caret-down"></i></button>
+				<li class="dropdown-li"><a href="artists.php">Artists</a><img src="img/double-arrow.png" class="down-arrow"></li>
 					<ul class="dropdown">
+						<li><a href="hp_dk.php">HP</a></li>
 						<li><a href="jwilly_dk.php">Jonas</a></li>
 						<li><a href="sbrandt_dk.php">Simon</a></li>
 						<li><a href="krieder_dk.php">Kamilla</a></li>
